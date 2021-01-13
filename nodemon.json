@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_PASSWORD":"aWmlrKuSCNiRcJcj",
+    "JW_KEY":"web_token_services_jwt_testing_sherlock"
+  }
+}

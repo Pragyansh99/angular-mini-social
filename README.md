@@ -1,4 +1,10 @@
-# AngularMiniSocialNetwork
+# Mini Social Network
+
+Project Started: 1 Jan 2021
+
+Deployed Over Heroku: 
+
+Project Link: 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 

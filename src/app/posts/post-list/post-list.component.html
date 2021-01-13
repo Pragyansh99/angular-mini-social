@@ -1,0 +1,18 @@
+<section id="posts__list" *ngIf="posts.length > 0">
+  <mat-expansion-panel hideToggle *ngFor="let post of posts">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ post?.title }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <img class="postList__image" [src]="post?.imagePath" alt="Image">
+    <p> {{ post?.content }} </p>
+    <mat-action-row *ngIf="isUserAuthenticated && userId == post.creator">
+      <a mat-raised-button color="primary" [routerLink]="['/edit', post._id]" > EDIT </a>
+      <button mat-raised-button color="warn" (click)="onDelete(post._id)"> DELETE </button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-paginator [length]="totalPost" [pageSize]="postPerPage" [pageSizeOptions]="pageSizeOptions" (page)="onPageChange($event)" ></mat-paginator>
+
+</section>

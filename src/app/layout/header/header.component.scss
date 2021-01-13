@@ -1,0 +1,44 @@
+header {
+  background: #333;
+  color: #eee;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.header__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.logo h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.header__section a {
+  color: white;
+  text-decoration: none;
+}
+.header__section .links ul li {
+  list-style: none;
+}
+.header__section .links a:hover {
+  color: red;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links ul li {
+  margin: 5px 10px;
+}
+

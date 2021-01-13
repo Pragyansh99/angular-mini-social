@@ -1,0 +1,25 @@
+<section id="upload__post">
+  <div class="post__card">
+    <h3> What's on your mind ? </h3>
+    <form (submit)="uploadPost()" [formGroup]="post_form">
+      <input type="text" name="title" placeholder="Enter title here" id="title" formControlName="title">
+      <textarea placeholder="What's on your mind ?" name="Post" rows="4" formControlName="content"></textarea>
+      <div class="post__imagepreview__container" *ngIf="imagePreview && imagePreview !== ''">
+        <img [src]="imagePreview" class="post__imagePreview" [alt]="post_form.value.title">
+      </div>
+      <div class="post__activity">
+        <div class="add_photos">
+          <label for="upload__file"> Add photos </label>
+          <input type="file" name="" id="upload__file" style="display: none;" (change)="onImageSelect($event)">
+        </div>
+        <div class="button-container">
+          <button mat-raised-button (click)='cancelUplaod()'> Cancel </button>
+          <button type="submit" mat-raised-button color="primary"> Upload </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Post List Starts -->
+<!-- <app-post-list></app-post-list> -->

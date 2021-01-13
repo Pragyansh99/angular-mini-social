@@ -1,0 +1,49 @@
+#login__section .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__container {
+width: 350px;
+padding: 0.55rem 1rem;
+}
+
+.form__container h1 {
+margin-top: 2rem;
+margin-bottom: 0.55rem;
+}
+
+#login__section form{
+margin-bottom: 2rem;
+}
+
+.form-control {
+margin: 1.25rem 0rem;
+}
+
+.form-control label {
+display: block;
+font-weight: bold;
+width: 100%;
+margin-bottom: 0.55rem;
+}
+
+.form-control input[type="password"],
+.form-control input[type="text"] {
+padding: 7px 10px;
+width: 100%;
+border-radius: 5px;
+border: 1px lightgray solid;
+}
+
+.login__btn {
+display: inline-block;
+border: none;
+border-radius: 5px;
+width: 100%;
+padding: 8px;
+cursor: pointer;
+background: linear-gradient(45deg, #864245, transparent);
+}

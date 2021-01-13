@@ -1,0 +1,63 @@
+#upload__post {
+  max-width: 1140px;
+}
+
+.post__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 0rem;
+}
+
+.post__card h3 {
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.post__card form {
+  width: 100%;
+}
+.post__card input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.post__card textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+}
+
+.post__activity {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0rem;
+}
+
+.add_photos label {
+  cursor: pointer;
+  color: #888484;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-container > *:first-child {
+  margin-right: 10px;
+}
+.post__imagepreview__container {
+  margin-top: 10px;
+}
+
+.post__imagePreview {
+  max-width: 85px;
+  opacity: 0.75;
+}
