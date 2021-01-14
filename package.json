@@ -11,10 +11,6 @@
     "start": "node server.js",
     "heroku-postbuild": "ng build --prod"
   },
-  "engines": {
-    "node": "14.15.1",
-    "npm": "6.14.8"
-  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~11.0.3",
@@ -55,5 +51,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
+  },
+  "engines": {
+    "node": "14.15.1",
+    "npm": "6.14.8"
   }
 }
