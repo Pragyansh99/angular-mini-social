@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start:web": "ng serve -o",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --prod --build-optimizer true --output-hashing all --aot true"
   },
   "private": true,
   "dependencies": {
