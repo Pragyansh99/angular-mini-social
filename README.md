@@ -2,9 +2,9 @@
 
 Project Started: 1 Jan 2021
 
-Deployed Over Heroku: 
+Deployed Over Heroku: 14 Jan 2021
 
-Project Link: 
+Project Link: https://angular-mini-social.herokuapp.com
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
