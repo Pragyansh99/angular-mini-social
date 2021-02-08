@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +16,13 @@ import { ToastrModule } from 'ngx-toastr';
 import { ErrorInterceptor } from './providers/error.intercept';
 import { PostsModule } from './posts/posts.module';
 import { AuthModule } from './auth/auth.module';
+import { AppinitService } from './providers/appinit.service';
+
+export function initializeApp(appInitService: AppinitService) {
+  return (): Promise<any> => {
+    return appInitService.Init();
+  }
+}
 
 @NgModule({
   declarations: [
@@ -34,6 +41,11 @@ import { AuthModule } from './auth/auth.module';
     AuthModule
   ],
   providers: [
+    { provide: APP_INITIALIZER,
+      useFactory: initializeApp,
+      deps: [AppinitService],
+      multi: true
+    },
     { provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true

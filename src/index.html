@@ -15,8 +15,66 @@
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
 
+  <style>
+    body{
+        /* background:black; */
+    }
+    .loader {
+        border: 8px solid transparent;
+        border-radius: 50%;
+        border-right-color: #09f;
+        border-top-color:#09f;
+        box-sizing: border-box;
+        width: 66px;
+        height: 66px;
+        /* position: fixed;
+        top:calc(50%-10px);
+        left: calc(50%-10px); */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        animation: animate 1s infinite linear;
+    }
+    .loader::before{
+        content: '';
+        border: 8px solid transparent;
+        border-radius: 50%;
+        border-right-color: #3cf;
+        border-top-color: #3cf;
+        box-sizing: border-box;
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: animate 2s infinite linear;
+    }
+    .loader::after{
+        content: '';
+        border: 8px solid transparent;
+        border-radius: 50%;
+        border-right-color: #6ff;
+        border-top-color: #6ff;
+        box-sizing: border-box;
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        left: 2px;
+        top: 9px;
+        animation: animate 3s infinite linear;
+    }
+    @keyframes animate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
 </head>
 <body class="mat-typography">
-  <app-root></app-root>
+  <app-root>
+    <div class="loader"></div>
+  </app-root>
 </body>
 </html>
